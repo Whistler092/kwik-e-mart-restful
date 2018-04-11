@@ -1,0 +1,2 @@
+CREATE SCHEMA IF NOT EXISTS `kwikemart` DEFAULT CHARACTER SET latin1 ;
+USE `kwikemart` ;
