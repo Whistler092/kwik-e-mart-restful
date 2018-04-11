@@ -1,6 +1,8 @@
 version: '3'
 services:
-  db:
+  mysql:
+    hostname: mysql
+    container_name: mysql
     build:
       context: ./database
       args:
@@ -9,14 +11,13 @@ services:
           - MYSQL_PASSWORD=${MYSQL_PASSWORD}
           - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
     ports:
-          - "${MYSQL_PORT}:3306" #For Local Development
-    restart: always
+      - "3306:3306"
   backend-java:
     build: ./Java-Backend/
     ports:
      - "8080:8080"
     depends_on:
-     - db
+     - mysql
     links:
-     - db
-  
+     - mysql
+    
