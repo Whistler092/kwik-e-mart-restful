@@ -9,6 +9,7 @@ Para iniciar;
 ```
 
 Pre-Requisitos:
-  docker
-  docker-compose
+
+  - docker
+  - docker-compose
   
