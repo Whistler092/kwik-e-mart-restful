@@ -22,11 +22,12 @@ namespace Kwikemark.Entities
         {
             get
             {
+                const string serverName = "database";
                 const string databaseName = "dbkwikemartnetcore";
                 const string databaseUser = "root";
                 const string databasePass = "FerroIntegral*V1";
 
-                return $"Server=localhost;" +
+                return $"Server={serverName};" +
                        $"database={databaseName};" +
                        $"uid={databaseUser};" +
                        $"pwd={databasePass};" +

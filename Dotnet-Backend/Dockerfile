@@ -4,7 +4,7 @@ EXPOSE 80
 
 FROM microsoft/aspnetcore-build:2.0 AS build
 WORKDIR /src
-COPY *.sln ./
+COPY kwikemart.sln ./
 COPY Api/kwik-e-mart.csproj Api/
 
 RUN dotnet restore

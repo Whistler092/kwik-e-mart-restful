@@ -1,6 +1,6 @@
 version: '3'
 services:
-  mysql:
+  database:
     hostname: mysql
     container_name: mysql
     build:
@@ -14,19 +14,19 @@ services:
       - "3306:3306"
     volumes:
       - db-data:/var/lib/mysql
-  backend-java:
-    build: ./Java-Backend/
-    ports:
-     - "8080:8080"
-    depends_on:
-     - mysql
-    links:
-     - mysql
+  # backend-java:
+  #   build: ./Java-Backend/
+  #   ports:
+  #    - "8080:8080"
+  #   depends_on:
+  #    - database
+  #   links:
+  #    - database
   kwikemart:
     image: kwikemart
     build:
-      context: .
-      dockerfile: Dotnet-Backend/Dockerfile
+      context: ./Dotnet-Backend
+      dockerfile: Dockerfile
     depends_on:
         - database
     links:
