@@ -1,0 +1,30 @@
+version: '3'
+
+services:
+  database:
+    build:
+      context: ./DB
+      args:
+          - MYSQL_DATABASE=${MYSQL_DATABASE}
+          - MYSQL_USER=${MYSQL_USER}
+          - MYSQL_PASSWORD=${MYSQL_PASSWORD}
+          - MYSQL_ROOT_PASSWORD=${MYSQL_ROOT_PASSWORD}
+    ports:
+          - "${MYSQL_PORT}:3316"
+    restart: always
+    volumes:
+        - db-data:/var/lib/mysql
+
+  kwikemart:
+    image: kwikemart
+    build:
+      context: .
+      dockerfile: Api/Dockerfile
+    depends_on:
+        - database
+    links:
+      - database
+    ports:
+      - "8000:80"
+volumes:
+    db-data:
