@@ -1,0 +1,11 @@
+/home/aparedes/workspace/dotnetcore/kwikemart/Api/bin/Debug/netcoreapp2.0/kwik-e-mart.deps.json
+/home/aparedes/workspace/dotnetcore/kwikemart/Api/bin/Debug/netcoreapp2.0/kwik-e-mart.runtimeconfig.json
+/home/aparedes/workspace/dotnetcore/kwikemart/Api/bin/Debug/netcoreapp2.0/kwik-e-mart.runtimeconfig.dev.json
+/home/aparedes/workspace/dotnetcore/kwikemart/Api/bin/Debug/netcoreapp2.0/kwik-e-mart.dll
+/home/aparedes/workspace/dotnetcore/kwikemart/Api/bin/Debug/netcoreapp2.0/kwik-e-mart.pdb
+/home/aparedes/workspace/dotnetcore/kwikemart/Api/obj/Debug/netcoreapp2.0/kwik-e-mart.csproj.CoreCompileInputs.cache
+/home/aparedes/workspace/dotnetcore/kwikemart/Api/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
+/home/aparedes/workspace/dotnetcore/kwikemart/Api/obj/Debug/netcoreapp2.0/kwik-e-mart.AssemblyInfoInputs.cache
+/home/aparedes/workspace/dotnetcore/kwikemart/Api/obj/Debug/netcoreapp2.0/kwik-e-mart.AssemblyInfo.cs
+/home/aparedes/workspace/dotnetcore/kwikemart/Api/obj/Debug/netcoreapp2.0/kwik-e-mart.dll
+/home/aparedes/workspace/dotnetcore/kwikemart/Api/obj/Debug/netcoreapp2.0/kwik-e-mart.pdb

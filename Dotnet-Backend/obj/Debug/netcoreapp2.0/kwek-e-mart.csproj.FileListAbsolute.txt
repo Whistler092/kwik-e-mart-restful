@@ -1,0 +1,11 @@
+/home/aparedes/workspace/dotnetcore/kwek-e-mart/bin/Debug/netcoreapp2.0/kwek-e-mart.deps.json
+/home/aparedes/workspace/dotnetcore/kwek-e-mart/bin/Debug/netcoreapp2.0/kwek-e-mart.runtimeconfig.json
+/home/aparedes/workspace/dotnetcore/kwek-e-mart/bin/Debug/netcoreapp2.0/kwek-e-mart.runtimeconfig.dev.json
+/home/aparedes/workspace/dotnetcore/kwek-e-mart/bin/Debug/netcoreapp2.0/kwek-e-mart.dll
+/home/aparedes/workspace/dotnetcore/kwek-e-mart/bin/Debug/netcoreapp2.0/kwek-e-mart.pdb
+/home/aparedes/workspace/dotnetcore/kwek-e-mart/obj/Debug/netcoreapp2.0/kwek-e-mart.csproj.CoreCompileInputs.cache
+/home/aparedes/workspace/dotnetcore/kwek-e-mart/obj/Debug/netcoreapp2.0/kwek-e-mart.AssemblyInfoInputs.cache
+/home/aparedes/workspace/dotnetcore/kwek-e-mart/obj/Debug/netcoreapp2.0/kwek-e-mart.AssemblyInfo.cs
+/home/aparedes/workspace/dotnetcore/kwek-e-mart/obj/Debug/netcoreapp2.0/kwek-e-mart.dll
+/home/aparedes/workspace/dotnetcore/kwek-e-mart/obj/Debug/netcoreapp2.0/kwek-e-mart.pdb
+/home/aparedes/workspace/dotnetcore/kwek-e-mart/obj/Debug/netcoreapp2.0/UserSecretsAssemblyInfo.cs
