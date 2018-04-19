@@ -24,13 +24,15 @@
         {
             try
             {
-                var entities = await _dbContext.Products.ToListAsync();
+                var entities = await _dbContext.Products.Include("TypeProduct").ToListAsync();
                 return Ok(entities);
             }
-            catch
+            catch (System.Exception ex)
             {
+                throw ex;
+                /*
                 return StatusCode((int)HttpStatusCode.InternalServerError, 
-                        "Error Obteniendo Ciudades");
+                        "Error Obteniendo Ciudades");*/
             }
         }
 

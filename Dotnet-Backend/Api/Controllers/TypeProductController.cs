@@ -24,7 +24,7 @@ namespace Kwikemart.Controllers
         {
             try
             {
-                var entities = await _dbContext.TypeProducts.ToListAsync();
+                var entities = await _dbContext.TypeProducts.Include("Products").ToListAsync();
                 return Ok(entities);
             }
             catch

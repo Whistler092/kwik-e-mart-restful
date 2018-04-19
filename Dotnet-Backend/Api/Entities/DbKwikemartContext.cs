@@ -22,8 +22,8 @@ namespace Kwikemark.Entities
         {
             get
             {
-                const string serverName = "database";
-                const string databaseName = "dbkwikemartnetcore";
+                const string serverName = "mysql";
+                const string databaseName = "kwikemart";
                 const string databaseUser = "root";
                 const string databasePass = "FerroIntegral*V1";
 

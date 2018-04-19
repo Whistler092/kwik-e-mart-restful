@@ -1,6 +1,6 @@
 version: '3'
 services:
-  database:
+  mysql:
     hostname: mysql
     container_name: mysql
     build:
@@ -24,13 +24,13 @@ services:
   #    - database
   kwikemart:
     image: kwikemart
-    build:
+    build:  
       context: ./Dotnet-Backend
       dockerfile: Dockerfile
     depends_on:
-        - database
+        - mysql
     links:
-      - database
+      - mysql
     ports:
       - "8000:80"
 
