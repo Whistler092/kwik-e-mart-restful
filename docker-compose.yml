@@ -14,25 +14,25 @@ services:
       - "3306:3306"
     volumes:
       - db-data:/var/lib/mysql
-  # backend-java:
-  #   build: ./Java-Backend/
-  #   ports:
-  #    - "8080:8080"
-  #   depends_on:
-  #    - database
-  #   links:
-  #    - database
-  kwikemart:
-    image: kwikemart
-    build:  
-      context: ./Dotnet-Backend
-      dockerfile: Dockerfile
-    depends_on:
-        - mysql
-    links:
-      - mysql
+  backend-java:
+    build: ./Java-Backend/
     ports:
-      - "8000:80"
+     - "8080:8080"
+    depends_on:
+     - mysql
+    links:
+     - mysql
+  # kwikemart:
+  #   image: kwikemart
+  #   build:  
+  #     context: ./Dotnet-Backend
+  #     dockerfile: Dockerfile
+  #   depends_on:
+  #       - mysql
+  #   links:
+  #     - mysql
+  #   ports:
+  #     - "8000:80"
 
 volumes:
   db-data:
