@@ -4,6 +4,9 @@ FROM maven:3.5-jdk-8-alpine
 WORKDIR /app
 
 ADD pom.xml /app/pom.xml
+RUN ["mvn", "dependency:resolve"]
+RUN ["mvn", "verify"]
+
 ADD src /app/src
 
 RUN [ "mvn", "clean" ]

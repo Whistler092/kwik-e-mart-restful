@@ -18,7 +18,7 @@
         {
             _dbContext = dbContext;
         }
-        // GET api/city
+        // GET api/product
         [HttpGet]
         public async Task<IActionResult> Get()
         {
@@ -32,11 +32,11 @@
                 throw ex;
                 /*
                 return StatusCode((int)HttpStatusCode.InternalServerError, 
-                        "Error Obteniendo Ciudades");*/
+                        "Error Obteniendo productos");*/
             }
         }
 
-        // POST api/city
+        // POST api/product
         [HttpPost]
         public async Task<IActionResult> Post([FromBody]ProductDTO value)
         {
@@ -60,11 +60,11 @@
             catch (System.Exception)
             {
                 return StatusCode((int)HttpStatusCode.InternalServerError, 
-                        "Error Almacenando Ciudad");
+                        "Error Almacenando productos");
             }
         }
 
-        // PUT api/city/5
+        // PUT api/product/5
         [HttpPut("{id}")]
         public async Task<IActionResult> Put(int id, [FromBody]ProductDTO value)
         {
@@ -93,11 +93,11 @@
             catch (System.Exception)
             {
                 return StatusCode((int)HttpStatusCode.InternalServerError,
-                        "Error Editar Ciudad");
+                        "Error Editar productos");
             }
         }
 
-        // DELETE api/city/5
+        // DELETE api/product/5
         [HttpDelete("{id}")]
         public async Task<IActionResult> Delete(int id)
         {
@@ -116,7 +116,7 @@
             catch (System.Exception)
             {
                 return StatusCode((int)HttpStatusCode.InternalServerError,
-                        "Error Eliminando Ciudad");
+                        "Error Eliminando productos");
             }
         }
     }
