@@ -30,9 +30,7 @@
             catch (System.Exception ex)
             {
                 throw ex;
-                /*
-                return StatusCode((int)HttpStatusCode.InternalServerError, 
-                        "Error Obteniendo productos");*/
+                
             }
         }
 
